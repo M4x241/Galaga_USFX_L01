@@ -3,6 +3,11 @@
 
 #include "ProyectilAmigo.h"
 
+void AProyectilAmigo::DesplazamientoX()
+{
+	posicionX = posicionX + speed;
+}
+
 // Sets default values
 AProyectilAmigo::AProyectilAmigo()
 {

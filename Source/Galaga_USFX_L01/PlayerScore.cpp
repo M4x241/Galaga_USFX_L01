@@ -3,6 +3,11 @@
 
 #include "PlayerScore.h"
 
+void APlayerScore::ScoreNew(float _scoreNaveEnemiga)
+{
+	scoreActual = scoreActual + _scoreNaveEnemiga;
+}
+
 // Sets default values
 APlayerScore::APlayerScore()
 {

@@ -3,6 +3,29 @@
 
 #include "NavesRestantes.h"
 
+void ANavesRestantes::addNave(int _score)
+{
+	totalNaves++;
+	if (totalNaves <= navesMax) {
+		if (_score % 50000*totalNaves == 0) {
+			//crear nuevo objeto alado
+		}
+
+	}
+	else {
+		//cout << totalNaves;
+	}
+}
+
+void ANavesRestantes::deleteNave()
+{
+	totalNaves--;
+	if (totalNaves <= navesMax) {
+		//borrar nave objeto
+
+	}
+}
+
 // Sets default values
 ANavesRestantes::ANavesRestantes()
 {

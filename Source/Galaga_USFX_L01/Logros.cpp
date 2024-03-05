@@ -3,6 +3,28 @@
 
 #include "Logros.h"
 
+/*
+void ALogros::MedallasActuales(int _level)
+{
+	if (_level % 100 == 0) {
+		tipoMedalla = HUNDRED;
+	}
+	else if (_level % 50 == 0) {
+		tipoMedalla = FIFTEEN;
+
+	}
+	else if (_level % 10 == 0) {
+		tipoMedalla = TEEN;
+	}
+	else if (_level % 5 == 0) {
+		tipoMedalla = FIVE;
+	}
+	else {
+		tipoMedalla = ONE;
+	}
+}*/
+
+
 // Sets default values
 ALogros::ALogros()
 {

@@ -3,6 +3,16 @@
 
 #include "Evento.h"
 
+void AEvento::Anuncio()
+{
+	if (bonus) {
+		//cout<<"Bonus level"<<endl;
+	}
+	else {
+		//cout<<"Stage "<<level<<endl;
+	}
+}
+
 // Sets default values
 AEvento::AEvento()
 {

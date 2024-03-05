@@ -3,6 +3,13 @@
 
 #include "HighScore.h"
 
+void AHighScore::ScoreNew(int _score)
+{
+	if (_score > scoreMax) {
+		scoreMax = _score;
+	}
+}
+
 // Sets default values
 AHighScore::AHighScore()
 {

@@ -21,10 +21,16 @@ private:
 	float damage;
 	FString name;
 	float shutTime;
-	float posicionX;
-	float posicionY;
-	float posicionZ;
-	//FVector posicion;
+	FVector posicion;
+	//enum trayectoria
+	int capacidadPasajeros;
+	int capacidadMunicion;
+	int tipoNave;
+	int experiencia;
+	float energia;
+
+	float peso;
+	float volumen;
 	//reemplazo a posicones XYZ
 	
 	public:
@@ -34,9 +40,14 @@ private:
 		FORCEINLINE float GetDamage() const { return damage; }
 		FORCEINLINE FString GetName() const { return name; }
 		FORCEINLINE float GetShutTime()const { return shutTime; }
-		FORCEINLINE float GetPosicionX() const { return posicionX; }
-		FORCEINLINE float GetPosicionY() const { return posicionY; }
-		FORCEINLINE float GetPosicionZ() const { return posicionZ; }
+		FORCEINLINE FVector GetPosicion() const { return posicion; }
+		FORCEINLINE int GetCapacidadPasajeros() const { return capacidadPasajeros; }
+		FORCEINLINE int GetCapacidadMunicion() const { return capacidadMunicion; }
+		FORCEINLINE int GetTipoNave() const { return tipoNave; }
+		FORCEINLINE int GetExperiencia() const { return experiencia; }
+		FORCEINLINE float GetEnergia() const { return energia; }
+		FORCEINLINE float GetPeso() const { return peso; }
+		FORCEINLINE float GetVolumen() const { return volumen; }
 
 	//Para reescribir valores
 	FORCEINLINE void SetStamina(float _stamina){stamina=_stamina;}
@@ -44,9 +55,15 @@ private:
 	FORCEINLINE void SetDamage(float _damage) { damage = _damage; }
 	FORCEINLINE void SetName(FString _name) { name = _name; }
 	FORCEINLINE void SetShutTime(float _shutTime) { shutTime = _shutTime; }
-	FORCEINLINE void SetPosicionX(float _posicionX) { posicionX = _posicionX; }
-	FORCEINLINE void SetPosicionY(float _posicionY) { posicionY = _posicionY; }
-	FORCEINLINE void SetPosicionZ(float _posicionZ) { posicionZ = _posicionZ; }
+	FORCEINLINE void SetPosicion(FVector _posicion) { posicion = _posicion; }
+	FORCEINLINE void SetCapacidadPasajeros(int _capacidadPasajeros) { capacidadPasajeros = _capacidadPasajeros; }
+	FORCEINLINE void SetCapacidadMunicion(int _capacidadMunicion) { capacidadMunicion = _capacidadMunicion; }
+	FORCEINLINE void SetTipoNave(int _tipoNave) { tipoNave = _tipoNave; }
+	FORCEINLINE void SetExperiencia(int _experiencia) { experiencia = _experiencia; }
+	FORCEINLINE void SetEnergia(float _energia) { energia = _energia; }
+	FORCEINLINE void SetPeso(float _peso) { peso = _peso; }
+	FORCEINLINE void SetVolumen(float _volumen) { volumen = _volumen; }
+
 
 		
 public:	

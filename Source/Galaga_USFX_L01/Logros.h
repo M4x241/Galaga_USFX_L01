@@ -10,6 +10,22 @@ UCLASS()
 class GALAGA_USFX_L01_API ALogros : public AActor
 {
 	GENERATED_BODY()
+private:
+
+	//enum Medallas { ONE, FIVE, TEEN, FIFTEEN, HUNDRED };
+	FVector posicion;
+	//Medallas tipoMedalla=ONE;
+public:
+	//getters
+	FORCEINLINE FVector GetPosicion() { return posicion; }
+	
+	//setters
+	FORCEINLINE void SetPosicion(FVector _posicion) { posicion = _posicion; }
+
+
+	//generar medallas;
+	//FORCEINLINE void MedallasActuales(int _level);
+	
 	
 public:	
 	// Sets default values for this actor's properties
